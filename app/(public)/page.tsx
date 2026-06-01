@@ -1,5 +1,6 @@
 import Hero from '@/components/sections/Hero'
 import Services from '@/components/sections/Services'
+import Process from '@/components/sections/Process'
 
 export default function HomePage() {
   return (
@@ -8,14 +9,7 @@ export default function HomePage() {
 
       <Services />
 
-      {/* ABLAUF ─ Schritt 6 */}
-      <section id="ablauf" className="section-padding">
-        <div className="container-max">
-          <p className="text-center text-slate-600 text-sm">
-            Ablauf-Sektion — wird in Schritt 6 ausgebaut
-          </p>
-        </div>
-      </section>
+      <Process />
 
       {/* GALERIE ─ Schritt 7 */}
       <section id="galerie" className="section-padding">
