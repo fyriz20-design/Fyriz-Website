@@ -1,6 +1,7 @@
 import Hero from '@/components/sections/Hero'
 import Services from '@/components/sections/Services'
 import Process from '@/components/sections/Process'
+import Contact from '@/components/sections/Contact'
 
 export default function HomePage() {
   return (
@@ -20,14 +21,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* KONTAKT ─ Schritt 8 */}
-      <section id="kontakt" className="section-padding">
-        <div className="container-max">
-          <p className="text-center text-slate-600 text-sm">
-            Kontaktformular — wird in Schritt 8 mit Resend verbunden
-          </p>
-        </div>
-      </section>
+      <Contact />
     </>
   )
 }
