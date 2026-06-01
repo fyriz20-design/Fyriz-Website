@@ -14,17 +14,17 @@ export default function ImpressumPage() {
           <div>
             <h2 className="text-slate-100 font-semibold mb-2">Angaben gemäß § 5 TMG</h2>
             <p>
-              Jakob Sawazki<br />
-              {/* TODO: Adresse eintragen */}
-              Musterstraße 1<br />
-              12345 Musterstadt
+              Firuz Azgin<br />
+              Hirschkopfstraße 26<br />
+              72250 Freudenstadt
             </p>
           </div>
 
           <div>
             <h2 className="text-slate-100 font-semibold mb-2">Kontakt</h2>
             <p>
-              E-Mail: {/* TODO: E-Mail eintragen */}info@sawazki-electronics.de
+              Telefon: 0179 254 22 51<br />
+              E-Mail: fyriz20@gmail.com
             </p>
           </div>
 

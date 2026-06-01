@@ -27,9 +27,9 @@ const ANFRAGE_TYPEN: { value: AnfrageTyp; label: string; icon: React.ElementType
 
 // ── Kontakt-Infos ────────────────────────────────────────────────────────────
 const CONTACT_INFOS = [
-  { icon: MapPin, label: 'Adresse',  value: 'Mörikestraße 15, 72250 Freudenstadt' },
-  { icon: Phone,  label: 'Telefon',  value: '+49 1520 2967632',                    href: 'tel:+4915202967632' },
-  { icon: Mail,   label: 'E-Mail',   value: 'sawazki.electronics@googlemail.com',  href: 'mailto:sawazki.electronics@googlemail.com' },
+  { icon: MapPin, label: 'Adresse',  value: 'Hirschkopfstraße 26, 72250 Freudenstadt' },
+  { icon: Phone,  label: 'Telefon',  value: '0179 254 22 51',                          href: 'tel:+491792542251' },
+  { icon: Mail,   label: 'E-Mail',   value: 'fyriz20@gmail.com',                       href: 'mailto:fyriz20@gmail.com' },
 ]
 
 const SERVICE_PILLS = [
