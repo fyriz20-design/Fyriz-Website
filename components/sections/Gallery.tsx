@@ -6,7 +6,7 @@ import GalleryGrid from './GalleryGrid'
 const PLACEHOLDER_IMAGES = [
   {
     id:  'p1',
-    url: 'https://images.unsplash.com/photo-1593640408182-31c228b0b6ed?w=1200&q=80',
+    url: 'https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?w=1200&q=80',
     alt: 'Professionelle Laptop-Reparatur',
   },
   {

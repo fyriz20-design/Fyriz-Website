@@ -79,9 +79,17 @@ export default function Footer() {
           <p className="text-xs text-slate-500">
             © {new Date().getFullYear()} Fyriz — Alle Rechte vorbehalten.
           </p>
-          <p className="text-xs text-slate-700">
-            Gebaut mit Next.js &amp; Vercel
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-xs text-slate-700">
+              Gebaut mit Next.js &amp; Vercel
+            </p>
+            <a
+              href="/admin/dashboard"
+              className="text-xs text-slate-800 hover:text-slate-600 transition-colors"
+            >
+              Admin
+            </a>
+          </div>
         </div>
       </div>
     </footer>
