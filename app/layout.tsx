@@ -4,8 +4,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Sawazki Electronics — Webdesign & IT-Reparaturen',
-    template: '%s | Sawazki Electronics',
+    default: 'Fyriz — Webdesign & IT-Reparaturen',
+    template: '%s | Fyriz',
   },
   description:
     'Professionelles Webdesign für Kleinunternehmen, Gasthäuser und Hotels. IT-Reparaturen: Notebooks, PCs, Bildschirmaustausch.',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     type:     'website',
     locale:   'de_DE',
-    siteName: 'Sawazki Electronics',
+    siteName: 'Fyriz',
   },
 }
 

@@ -53,7 +53,7 @@ export async function POST(request: Request) {
     // Resend-Domain ändern (z.B. anfragen@sawazki-electronics.de).
     // Für lokale Tests funktioniert onboarding@resend.dev → deine eigene E-Mail.
     await resend.emails.send({
-      from:    'Sawazki Electronics <onboarding@resend.dev>',
+      from:    'Fyriz <onboarding@resend.dev>',
       to:      process.env.CONTACT_EMAIL!,
       replyTo: email.trim(),
       subject: `Neue Anfrage: ${typLabel} — ${name.trim()}`,
@@ -64,7 +64,7 @@ export async function POST(request: Request) {
           <div style="max-width: 560px; margin: 0 auto; background: white; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
             <div style="background: #0a0a0f; padding: 24px 32px;">
               <p style="color: #14b8a6; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 4px;">
-                Sawazki Electronics
+                Fyriz
               </p>
               <h1 style="color: #f1f5f9; font-size: 20px; font-weight: 800; margin: 0;">
                 Neue Anfrage eingegangen

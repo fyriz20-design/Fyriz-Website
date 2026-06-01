@@ -38,10 +38,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-lg bg-brand flex items-center justify-center text-white font-bold text-sm shrink-0">
-              S
+              F
             </div>
             <span className="font-semibold text-slate-100 text-sm hidden sm:block">
-              Sawazki Electronics
+              Fyriz
             </span>
           </Link>
 

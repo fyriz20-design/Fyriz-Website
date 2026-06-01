@@ -22,10 +22,10 @@ export default function Footer() {
           <div className="max-w-xs">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-7 h-7 rounded-lg bg-brand flex items-center justify-center text-white font-bold text-xs shrink-0">
-                S
+                F
               </div>
               <span className="font-semibold text-slate-100 text-sm">
-                Sawazki Electronics
+                Fyriz
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
@@ -77,7 +77,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-10 pt-6 border-t border-surface-border flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} Sawazki Electronics — Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} Fyriz — Alle Rechte vorbehalten.
           </p>
           <p className="text-xs text-slate-700">
             Gebaut mit Next.js &amp; Vercel

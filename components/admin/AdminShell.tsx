@@ -27,7 +27,7 @@ export default function AdminShell({ email, children }: AdminShellProps) {
           {/* Logo */}
           <div className="flex items-center gap-2.5">
             <div className="w-7 h-7 rounded-lg bg-brand flex items-center justify-center text-white font-bold text-xs">
-              S
+              F
             </div>
             <span className="font-semibold text-slate-100 text-sm">Admin</span>
           </div>

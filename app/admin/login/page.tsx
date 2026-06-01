@@ -34,10 +34,10 @@ export default function AdminLoginPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <div className="w-10 h-10 rounded-xl bg-brand mx-auto flex items-center justify-center text-white font-bold text-lg mb-4">
-            S
+            F
           </div>
           <h1 className="text-xl font-bold text-slate-100">Admin-Bereich</h1>
-          <p className="text-sm text-slate-400 mt-1">Sawazki Electronics</p>
+          <p className="text-sm text-slate-400 mt-1">Fyriz</p>
         </div>
 
         {/* Form */}
