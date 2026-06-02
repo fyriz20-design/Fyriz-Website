@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'Webdesign', 'IT-Reparatur', 'Notebook Reparatur', 'PC Reparatur',
     'Bildschirm wechseln', 'Webseite erstellen lassen',
   ],
-  authors: [{ name: 'Jakob Sawazki' }],
+  authors: [{ name: 'Firuz Azgin' }],
   openGraph: {
     type:     'website',
     locale:   'de_DE',
