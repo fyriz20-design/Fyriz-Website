@@ -94,11 +94,6 @@ export async function POST(request: Request) {
                 <p style="color: #64748b; font-size: 12px; font-weight: 600; text-transform: uppercase; margin: 0 0 8px;">Nachricht</p>
                 <p style="color: #334155; font-size: 14px; line-height: 1.6; margin: 0; white-space: pre-wrap;">${nachricht.trim()}</p>
               </div>` : ''}
-              <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e2e8f0;">
-                <p style="color: #94a3b8; font-size: 12px; margin: 0;">
-                  Diese Anfrage wurde über das Kontaktformular auf sawazki-electronics.de übermittelt.
-                </p>
-              </div>
             </div>
           </div>
         </body>
