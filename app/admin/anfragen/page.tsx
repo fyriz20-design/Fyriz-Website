@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { supabaseAdmin } from '@/lib/supabase/admin'
 import { redirect } from 'next/navigation'
 import AdminShell from '@/components/admin/AdminShell'
 import AnfragenCard from '@/components/admin/AnfragenCard'
@@ -9,13 +10,14 @@ interface Props {
 }
 
 const STATUS_FILTERS: { value: AnfrageStatus | 'alle'; label: string }[] = [
-  { value: 'alle',       label: 'Alle'          },
-  { value: 'offen',      label: 'Offen'         },
-  { value: 'bearbeitung',label: 'In Bearbeitung' },
-  { value: 'erledigt',   label: 'Erledigt'      },
+  { value: 'alle',        label: 'Alle'           },
+  { value: 'offen',       label: 'Offen'          },
+  { value: 'bearbeitung', label: 'In Bearbeitung' },
+  { value: 'erledigt',    label: 'Erledigt'       },
 ]
 
 export default async function AnfragenPage({ searchParams }: Props) {
+  // Auth-Check via normalen Client
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/admin/login')
@@ -23,8 +25,8 @@ export default async function AnfragenPage({ searchParams }: Props) {
   const { status: filterStatus } = await searchParams
   const activeFilter = (filterStatus as AnfrageStatus | 'alle') ?? 'alle'
 
-  // Anfragen aus Supabase laden
-  let query = supabase
+  // Daten via Admin-Client (umgeht RLS)
+  let query = supabaseAdmin
     .from('anfragen')
     .select('*')
     .order('created_at', { ascending: false })
@@ -35,8 +37,8 @@ export default async function AnfragenPage({ searchParams }: Props) {
 
   const { data: anfragen, error } = await query
 
-  // Anzahlen für Filter-Badges
-  const { data: counts } = await supabase
+  // Zähler für Filter-Badges
+  const { data: counts } = await supabaseAdmin
     .from('anfragen')
     .select('status')
 
@@ -75,7 +77,6 @@ export default async function AnfragenPage({ searchParams }: Props) {
         ))}
       </div>
 
-      {/* Liste */}
       {error && (
         <p className="text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-lg p-3 mb-4">
           Fehler beim Laden: {error.message}

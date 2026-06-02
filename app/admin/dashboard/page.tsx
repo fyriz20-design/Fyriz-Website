@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { supabaseAdmin } from '@/lib/supabase/admin'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import { MessageSquare, Image } from 'lucide-react'
@@ -9,16 +10,16 @@ export default async function DashboardPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/admin/login')
 
-  const { count: offeneAnfragen } = await supabase
+  const { count: offeneAnfragen } = await supabaseAdmin
     .from('anfragen')
     .select('*', { count: 'exact', head: true })
     .eq('status', 'offen')
 
-  const { count: alleAnfragen } = await supabase
+  const { count: alleAnfragen } = await supabaseAdmin
     .from('anfragen')
     .select('*', { count: 'exact', head: true })
 
-  const { count: alleMedien } = await supabase
+  const { count: alleMedien } = await supabaseAdmin
     .from('medien')
     .select('*', { count: 'exact', head: true })
 

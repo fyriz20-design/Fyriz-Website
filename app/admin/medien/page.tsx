@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { supabaseAdmin } from '@/lib/supabase/admin'
 import { redirect } from 'next/navigation'
 import AdminShell from '@/components/admin/AdminShell'
 import MediaManager from '@/components/admin/MediaManager'
@@ -9,7 +10,7 @@ export default async function MedienPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/admin/login')
 
-  const { data: medien } = await supabase
+  const { data: medien } = await supabaseAdmin
     .from('medien')
     .select('*')
     .order('created_at', { ascending: false })
