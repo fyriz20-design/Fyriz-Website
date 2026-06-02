@@ -21,16 +21,6 @@ export default function GalleryGrid({ images, isPlaceholder }: GalleryGridProps)
 
   return (
     <>
-      {/* ── Placeholder-Hinweis ──────────────────────────────────────────── */}
-      {isPlaceholder && (
-        <p className="text-center text-xs text-slate-600 mb-6">
-          Beispielbilder — eigene Bilder über den{' '}
-          <a href="/admin/medien" className="text-brand/60 hover:text-brand transition-colors">
-            Admin-Bereich
-          </a>{' '}
-          hochladen.
-        </p>
-      )}
 
       {/* ── Grid ────────────────────────────────────────────────────────── */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
