@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Mail, Phone, ChevronDown, ChevronUp } from 'lucide-react'
+import { Mail, ChevronDown, ChevronUp, Trash2 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { formatDate } from '@/lib/utils'
 import StatusBadge from './StatusBadge'
@@ -116,6 +116,15 @@ export default function AnfragenCard({ anfrage }: AnfragenCardProps) {
                   {ANFRAGE_STATUS_LABELS[s]}
                 </button>
               ))}
+
+              {/* Löschen */}
+              <button
+                disabled={loading}
+                className="ml-auto flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border border-red-500/30 text-red-400 hover:bg-red-500/10 hover:border-red-500/50 transition-all disabled:opacity-50"
+              >
+                <Trash2 size={12} />
+                Löschen
+              </button>
             </div>
           </div>
         </div>
