@@ -71,10 +71,12 @@ export default function DatenschutzPage() {
               <div className="p-4 rounded-lg bg-surface-raised border border-surface-border">
                 <p className="font-medium text-slate-200 mb-1">Vercel Inc. (Hosting)</p>
                 <p className="text-slate-400">
-                  Die Website wird auf Servern von Vercel Inc., 340 Pine Street, Suite 701,
-                  San Francisco, CA 94104, USA gehostet. Beim Abruf der Website werden
-                  automatisch Server-Log-Daten (IP-Adresse, Browsertyp, Datum/Uhrzeit)
-                  erfasst. Grundlage: Art. 6 Abs. 1 lit. f DSGVO.{' '}
+                  Diese Website wird auf Servern von Vercel Inc. betrieben. Die
+                  Serverless-Funktionen und Datenverarbeitung erfolgen ausschließlich in der
+                  EU-Region <strong className="text-slate-300">Frankfurt am Main, Deutschland</strong> (Region: fra1).
+                  Beim Abruf der Website werden automatisch Server-Log-Daten
+                  (IP-Adresse, Browsertyp, Datum/Uhrzeit) erfasst.
+                  Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.{' '}
                   <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer"
                     className="text-brand hover:underline">Datenschutzerklärung Vercel</a>
                 </p>
