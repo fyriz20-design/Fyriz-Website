@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -14,24 +14,12 @@ const NAV_LINKS = [
 ]
 
 export default function Navbar() {
-  const [scrolled,    setScrolled]    = useState(false)
-  const [mobileOpen,  setMobileOpen]  = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
     <>
       <header
-        className={cn(
-          'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b',
-          scrolled
-            ? 'bg-[#0a0a0f]/95 backdrop-blur-md border-surface-border'
-            : 'bg-[#0a0a0f]/80 backdrop-blur-sm border-white/5'
-        )}
+        className="fixed top-0 left-0 right-0 z-50 bg-[#1c1c28] border-b border-[#2a2a3e]"
       >
         <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
