@@ -1,4 +1,5 @@
 import Hero     from '@/components/sections/Hero'
+import About    from '@/components/sections/About'
 import Services  from '@/components/sections/Services'
 import Process   from '@/components/sections/Process'
 import Gallery   from '@/components/sections/Gallery'
@@ -8,6 +9,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <About />
       <Services />
       <Process />
       <Gallery />
