@@ -27,10 +27,10 @@ export default function Navbar() {
     <>
       <header
         className={cn(
-          'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+          'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b',
           scrolled
-            ? 'bg-[#0a0a0f]/90 backdrop-blur-md border-b border-surface-border'
-            : 'bg-transparent'
+            ? 'bg-[#0a0a0f]/95 backdrop-blur-md border-surface-border'
+            : 'bg-[#0a0a0f]/80 backdrop-blur-sm border-white/5'
         )}
       >
         <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -51,7 +51,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="px-4 py-2 text-sm text-slate-400 hover:text-slate-100 hover:bg-white/5 rounded-lg transition-colors"
+                  className="px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
                 >
                   {link.label}
                 </Link>
